@@ -2,11 +2,21 @@ import { NextResponse } from 'next/server';
 import fs from 'fs';
 import path from 'path';
 
-export async function GET(request: Request) {
-  try {
+// Cache quotes data in memory
+let quotesCache: any[] | null = null;
+
+function loadQuotes(): any[] {
+  if (quotesCache === null) {
     const filePath = path.join(process.cwd(), 'public', 'quotes.json');
     const fileContents = fs.readFileSync(filePath, 'utf8');
-    const quotes = JSON.parse(fileContents);
+    quotesCache = JSON.parse(fileContents);
+  }
+  return quotesCache!;
+}
+
+export async function GET(request: Request) {
+  try {
+    const quotes = loadQuotes();
 
     // Get query parameters for optional filtering
     const { searchParams } = new URL(request.url);
@@ -28,7 +38,11 @@ export async function GET(request: Request) {
       filteredQuotes = filteredQuotes.slice(0, limitNum);
     }
 
-    return NextResponse.json(filteredQuotes);
+    return NextResponse.json(filteredQuotes, {
+      headers: {
+        'Cache-Control': 'public, s-maxage=3600, stale-while-revalidate=86400',
+      },
+    });
   } catch (error) {
     console.error('Error reading quotes:', error);
     return NextResponse.json(
