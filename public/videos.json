@@ -1,37 +1,42 @@
 [
   {
     "id": "1",
-    "name": "Video 1",
-    "link": "https://www.youtube.com/watch?v=KchSfOdwCJE"
-  },
-  {
-    "id": "2",
-    "name": "Video 2",
-    "link": "https://www.youtube.com/watch?v=O-tGIpa-YNc"
-  },
-  {
-    "id": "3",
-    "name": "Video 3",
-    "link": "https://www.youtube.com/watch?v=DF_FkTOAIXw"
-  },
-  {
-    "id": "4",
-    "name": "Video 4",
+    "name": "The Truth About Hard Work: Alex Hormozi and Chris Williamson",
     "link": "https://www.youtube.com/watch?v=oOA_0qdJuus"
   },
   {
-    "id": "5",
-    "name": "Video 5",
+    "id": "2",
+    "name": "Success is the Only Revenge! 🔥 | Alex Hormozi #shorts",
     "link": "https://www.youtube.com/watch?v=AXJMWAzMEO8"
   },
   {
-    "id": "6",
-    "name": "Video 6",
+    "id": "3",
+    "name": "This Alex Hormozi Quote Will Blow Your Mind 🤯",
     "link": "https://www.youtube.com/watch?v=O0Kv0MYZDFs"
   },
   {
+    "id": "4",
+    "name": "\"The Boring Middle\" Alex Hormozi x Chris Williamson #motivation #mindset #alexhormozi #shorts",
+    "link": "https://www.youtube.com/watch?v=mFoIZ8N3e0U"
+  },
+  {
+    "id": "5",
+    "name": "Alex Hormozi - Don't Avoid Failure. #alexhormozi",
+    "link": "https://www.youtube.com/watch?v=fxYWi5-EtNU"
+  },
+  {
+    "id": "6",
+    "name": "Results Come From Our Actions, Not Aspirations | Alex Hormozi",
+    "link": "https://www.youtube.com/watch?v=bvcGVuDmkJY"
+  },
+  {
     "id": "7",
-    "name": "Video 7",
-    "link": "https://www.youtube.com/watch?v=_S4-ngATxMg"
+    "name": "Make Your Epic Story Happen Right Now - Chris Williamson & Alex Hormozi",
+    "link": "https://www.youtube.com/watch?v=yfXL9fMiwYY"
+  },
+  {
+    "id": "8",
+    "name": "The Consequences of Being Exceptional | Chris Williamson & Alex Hormozi Wisdom",
+    "link": "https://www.youtube.com/watch?v=PBH2gfihfpw"
   }
 ]
